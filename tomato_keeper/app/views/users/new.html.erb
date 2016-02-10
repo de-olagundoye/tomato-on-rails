@@ -1,0 +1,21 @@
+<h3>Sign Up</h3>
+
+<%= form_tag '/signup' do %>
+
+  <%= label_tag(:first_name, "First Name:") %>
+  <%= text_field_tag :first_name, nil, placeholder: "First Name" %> <br>
+
+  <%= label_tag(:last_name, "Last Name:") %>
+  <%= text_field_tag :last_name, nil, placeholder: "Last Name" %> <br>   
+
+  <%= label_tag(:email_address, "Email Address:") %>
+  <%= text_field_tag :email_address, nil, placeholder: "Email Address" %> <br>
+
+  <%= label_tag(:password, "Password:") %>
+  <%= password_field_tag :password, nil, placeholder: "Password" %> <br>
+
+  <%= label_tag(:password_confirmation, "Password Confirmation:") %>
+  <%= password_field_tag :password_confirmation, nil, placeholder: "Password Confirmation" %> <br>
+  
+  <%= submit_tag value="Sign Up"%>
+<% end %>

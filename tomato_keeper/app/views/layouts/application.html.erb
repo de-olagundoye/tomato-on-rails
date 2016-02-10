@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TomatoKeeper</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="header">
+  <% if @logged_in_user %>
+    <p><%= @logged_in_user.first_name %> <%= @logged_in_user.last_name %> /
+    <%= link_to "Log Out", logout_path, method: "delete" %></p>
+  <% else %>
+    <%= link_to "Log In", "/login"%>
+    <%= link_to "Sign Up", "/signup"%>
+  <% end %>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

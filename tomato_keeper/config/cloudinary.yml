@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dolagun
+  api_key: '791776931369363'
+  api_secret: 4kjSm8kHbWxQ1iVmlNvH1u8mdH4
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dolagun
+  api_key: '791776931369363'
+  api_secret: 4kjSm8kHbWxQ1iVmlNvH1u8mdH4
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dolagun
+  api_key: '791776931369363'
+  api_secret: 4kjSm8kHbWxQ1iVmlNvH1u8mdH4
+  enhance_image_tag: true
+  static_image_support: false

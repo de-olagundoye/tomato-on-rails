@@ -1,0 +1,29 @@
+<h3>Add a New Tomato</h3>
+
+  <% if !@logged_in_user %>
+
+   <p>Please <a href="/login">log in</a> or <a href="/users/new">sign up</a> to add a new tomato.</p>
+
+   <% else %>
+
+    <%= form_tag '/tomatoes', multipart: true do %>
+
+      <%= label_tag(:name, "Name:") %>
+      <%= text_field_tag :name, nil, placeholder: "Name" %> <br>
+
+      <%= label_tag(:color, "Color:") %>
+      <%= select_tag(:color, options_for_select(@colors.pluck(:name))) %> <br>   
+
+      <%= label_tag(:origin, "Origin:") %>
+      <%= text_field_tag :origin, nil, placeholder: "Origin" %> <br>
+
+      <%= label_tag(:description, "Description:") %>
+      <%= text_field_tag :description, nil, placeholder: "Description" %> <br>
+
+      <%= label_tag(:image, "Image:") %>
+      <%= file_field_tag :image, placeholder: "Image" %> <br>
+      
+      <%= submit_tag value="Add Tomato"%>
+    <% end %>
+
+  <% end %>
