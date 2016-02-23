@@ -2,15 +2,17 @@ Rails.application.routes.draw do
 
   get 'sessions/new'
 
-  root 'welcome#index'
+  root 'tomatoes#index'
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
   get '/signup' => 'users#new'
-  post '/signup' => 'users#create' 
+  post '/signup' => 'users#create'
+  get '/users/:id' => 'users#show'
   
   resources :tomatoes
+  resources :colors
 
   # get 'welcome/index'
 

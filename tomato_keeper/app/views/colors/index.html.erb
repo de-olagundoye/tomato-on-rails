@@ -1,0 +1,10 @@
+<div class="show-grid">
+  <% @colors.each do |color| %>
+    <div id="color-grid" class="col-xs-4">
+      <ul>
+        <a href="/colors/<%= color.id%>"><%= color.name %></a>
+        <a href="/colors/<%= color.id%>"><img class="thumbnail crop color-grid-item" src="<%= color.tomatoes.last.image %>"alt=""></a>
+      </ul>
+    </div>
+  <% end %>
+</div>

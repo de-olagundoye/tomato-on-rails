@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+
+body {
+  font-family: 'Vollkorn', serif !important;
+}
+
+a,
+a:active,
+a:visited {
+  color: #500000  !important;
+}
+
+a:hover {
+  color: #4A572C !important;
+  text-decoration: none !important;
+}
+
+.tomato-head img {
+  width: 700px;
+}
+
+.welcome a {
+  color: #4A572C !important;
+}
+
+img {
+  max-width: 500px;
+}
+
+.crop {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  float: left;
+}
+
+.crop img {
+  width: 400px;
+  height: 300px;
+  float: left;
+}
+
+#color-grid {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.border {
+  border-right: 1px solid #ccc;
+  min-height: 750px;
+}
+
+.show {
+  text-align: center;
+}
+
+.show-grid {
+  max-width: 700px;
+}
+
+.left {
+  padding-right: 70px;
+}
+
+.right {
+  margin: 0 auto; 
+  max-width: 500px;
+}
+
+.welcome{
+  margin-left: 35px;
+  padding-bottom: 30px;
+}
+
+#header {
+  text-align: right;
+  padding: 30px;
+  padding-bottom: 0px;
+}

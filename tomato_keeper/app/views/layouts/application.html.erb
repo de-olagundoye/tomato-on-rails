@@ -7,18 +7,42 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="header">
+    <% if @logged_in_user %>
+      <p> <%= @logged_in_user.first_name %> <%= @logged_in_user.last_name %> /
+      <%= link_to "Log Out", logout_path, method: "delete" %></p>
+    <% else %>
+      <%= link_to "Log In", "/login"%>/
+      <%= link_to "Sign Up", "/signup"%>
+    <% end %>
+  </div>
 
-<div id="header">
-  <% if @logged_in_user %>
-    <p><%= @logged_in_user.first_name %> <%= @logged_in_user.last_name %> /
-    <%= link_to "Log Out", logout_path, method: "delete" %></p>
-  <% else %>
-    <%= link_to "Log In", "/login"%>
-    <%= link_to "Sign Up", "/signup"%>
-  <% end %>
-</div>
+  <div class="tomato-head"> 
+    <a href="/"><img id="logo" src="/images/tm_head.png"></a>
+  </div>
 
-<%= yield %>
-
+  <div id="main-container" class="container">
+    <div class="row">
+      <div id="sidebar" class="col-xs-3 left">
+        <div class="border">
+          <div class="welcome">
+            <a href="/tomatoes/new">Add a Tomato</a>
+            <br>
+            <a href="/tomatoes/<%= @random.id %>">Random</a>
+            <br>
+            <a href="/colors/">View by Color</a>
+          </div>
+          <% @tomatoes.each do |tomato| %>
+            <ul>
+              <a href="/tomatoes/<%= tomato.id %>"><%= tomato.name %></a>
+            </ul>
+          <% end %>
+        </div>
+      </div>
+      <div id="content" class="col-xs-9">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

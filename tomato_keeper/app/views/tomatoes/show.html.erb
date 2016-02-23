@@ -1,9 +1,16 @@
-<h1><%= @tomato.name %></h1>
-
-<img class="show" src="<%= @tomato.image %>">
-
-<p class="show"><%= @tomato.origin %> </p>
-<p class="show"><%= @tomato.color.name %> </p>
-<p class="show"><%= @tomato.description%> </p>
-
-<p class="show"><%= @tomato.user.first_name%> <%= @tomato.user.last_name%> </p>
+<div class="right">
+  <div class="show">
+    <h1><%= @tomato.name %></h1>
+    <br>
+    <img src="<%= @tomato.image %>">
+  </div>
+  <br>
+  <div>
+    <p><strong>Origin:</strong> <%= @tomato.origin %></p>
+    <p><strong>Color:</strong> <a href="/colors/<%= @tomato.color.id %>"><%= @tomato.color.name %></a></p> 
+    <p><%= @tomato.description%></p>
+    <br>
+    <br>
+    <p><strong>Created By:</strong> <a href="/users/<%=@tomato.user.id%>/"><%= @tomato.user.first_name%> <%= @tomato.user.last_name%></a> on <%= @tomato.created_date.frmt_mm_dd_yy '/'%> at <%= @tomato.created_date.frmt_RR %></p>
+  </div>
+</div>

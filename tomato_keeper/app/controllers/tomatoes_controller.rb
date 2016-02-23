@@ -20,7 +20,8 @@ class TomatoesController < ApplicationController
     @upload = Cloudinary::Uploader.upload(params[:image])
 
     @tomato = Tomato.create(name: params[:name], color: @selected_color, origin: params[:origin], description: params[:description], image: @upload["url"], user_id: @user.id, created_date: DateTime.now)
-    redirect_to '/tomatoes'
+    
+    redirect_to "/tomatoes/#{@tomato.id}"
   end
 
 end

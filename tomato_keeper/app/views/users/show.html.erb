@@ -1,0 +1,7 @@
+<h1> Tomatoes added by <%= @user.first_name %> <%= @user.last_name %> </h1>
+
+ <% @tomatoes.each do |tomato| %>
+    <ul>
+      <a href="/tomatoes/<%= tomato.id %>"><%= tomato.name %></a>
+    </ul>
+  <% end %>

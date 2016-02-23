@@ -44,7 +44,7 @@ t3 = Tomato.create({
   name: "Clackamas Blueberry Tomato",
   color: c1,
   origin: "Washington, USA",
-  description: "Another excellent blue variety with rich anthocyanin’s making for a deep color. Very nice flavor, similar to a cherry tomato variety. Fruits are about the size of a large cherry and ripen to a dark blue. An outstanding Tom Wagner variety.",
+  description: "Another excellent blue variety with rich anthocyanins making for a deep color. Very nice flavor, similar to a cherry tomato variety. Fruits are about the size of a large cherry and ripen to a dark blue. An outstanding Tom Wagner variety.",
   image: "http://i.imgur.com/plC6WIF.jpg",
   created_date: DateTime.now,
   user: u1
@@ -114,7 +114,7 @@ t10 = Tomato.create({
   name: "Grub’s Mystery Green Tomato",
   color: c4,
   origin: "Sydney, Australia",
-  description: "Early to mid-season, compact 4′ tall indet. plant, potato leaf, loaded with green-when-ripe beefsteak fruit, 7-17 oz. This variety was ‘discovered’ in Australia by David Lockwood (a.k.a. “Grub”) in his Paul Robeson planting in 2005. The original plant that gave the green-when-ripe fruit was regular leaf, but the next generation growout by Denise Salmon (Vancouver BC) gave potato leaf plants with green-when-ripe fruits.",
+  description: "Early to mid-season, compact 4′ tall indet. plant, potato leaf, loaded with green-when-ripe beefsteak fruit, 7-17 oz. This variety was ‘discovered’ in Australia by David Lockwood (a.k.a. “Grub”) in his Paul Robeson planting in 2005. The original plant that gave the green-when-ripe fruit was regular leaf, but the next generation grow-out by Denise Salmon (Vancouver BC) gave potato leaf plants with green-when-ripe fruits.",
   image: "http://i.imgur.com/zVEto6M.jpg",
   created_date: DateTime.now,
   user: u1
@@ -223,7 +223,7 @@ t20 = Tomato.create({
 t21 = Tomato.create({
   name: "Gold Dust Tomato",
   color: c7,
-  origin: "New Hampsire, USA",
+  origin: "New Hamphsire, USA",
   description: "Developed by L.C. Peirce, M.L. Crispi, H.G. Miller, Univ. of New Hampshire, Dept. of Plant Biology. in 1992. An extra early, regular leaf, determinate shrub producer of beautiful, 8 oz., 2-inch, firm, smooth, gold tomatoes. Crack resistant. Uniform ripening.",
   image: "http://i.imgur.com/nYtnrwj.jpg",
   created_date: DateTime.now,

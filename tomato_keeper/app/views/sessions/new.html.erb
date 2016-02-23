@@ -1,7 +1,11 @@
-<h1> Log In</h1>
+<div class="right">
+  <h1> Log In</h1>
 
-  <%= form_tag '/login' do %>
-    <%= text_field_tag :email_address, nil, placeholder: "Email"%>
-    <%= password_field_tag :password, nil, placeholder: "Password"%>
-    <%= submit_tag value="Log In"%>
-  <% end %>
+    <%= form_tag '/login' do %>
+      <%= label_tag(:email_address, "Email Address: ") %>
+      <%= text_field_tag :email_address, nil, required: true %><br>
+      <%= label_tag(:password, "Password: ") %>
+      <%= password_field_tag :password, nil, required: true %><br>
+      <%= submit_tag value="Log In"%>
+    <% end %>
+</div>
