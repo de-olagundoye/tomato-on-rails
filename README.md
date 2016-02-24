@@ -1,2 +1,4 @@
-# wiki-on-rails
-Project Two on Rails
+# tomato-on-rails
+Tomato Keeper on Rails
+
+tomato-keeper.herokuapp.com
